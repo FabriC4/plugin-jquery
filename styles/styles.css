@@ -1,0 +1,575 @@
+/* --- Estilo General del Cuerpo de la Página --- */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-image: url('../imagenes/championsArena.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    padding: 100px 0 0 0;
+}
+
+/* --- Estilo del Contenedor del Rectángulo Transparente --- */
+.rectangulo-transparente {
+    background-color: rgba(0, 64, 155, 0.8);
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100px;
+}
+
+/* --- Estilo del Contenedor de la Cabecera --- */
+header {
+    width: 100%;
+    padding: 0;
+}
+
+/* --- Contenedor del Logo y el Título --- */
+.header-container,
+.logo-titulo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    justify-content: space-between;
+}
+
+.logo-titulo-container {
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+    z-index: 1001;
+}
+
+.titulo-con-marco {
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 49, 162, 0.7);
+}
+
+/* --- Estilo del Contenedor de Login --- */
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    margin-right: 10px;
+}
+
+.login-container input[type="submit"] {
+    background-color: rgba(42, 35, 132, 0.7);
+    cursor: pointer;
+}
+
+.login-container a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* --- Estilo de la Navegación --- */
+nav {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(66, 94, 253, 0.477);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;
+}
+
+/* --- Estilo para la Tabla de Enlaces --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(0, 49, 162, 0.7);
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(0, 49, 162, 0.7);
+}
+
+/* --- Estilo de la Sección Principal --- */
+main {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    padding-top: 140px;
+}
+
+main a {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 2, 121, 0.467);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+main a img.icono {
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+.enlace-fondo {
+    background-image: url('../imagenes/cancha2.jpg');
+}
+
+a.enlace-con-imagen {
+    background-image: url('../imagenes/cancha.png');
+}
+
+a.enlace-con-imagen:hover {
+    background-image: url('../imagenes/champiñon.gif');
+}
+
+/* Tema oscuro */
+.dark-theme {
+    background-image: url('../imagenes/championsArena2.jpg');
+    color: rgb(255, 255, 255);
+}
+
+/* Lista de Temas Recientes */
+.recent-topics {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.recent-topics ul {
+    list-style: none;
+    width: 90%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-inline-start: 0px;
+}
+
+.recent-topics li {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    background-color: rgba(0, 2, 121, 0.467);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.recent-topics img.icono {
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+/* --- Estilo del Pie de Página --- */
+footer {
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* --- Estilos Específicos para la Página de Ronaldo y Messi --- */
+
+/* Estilo del video de fondo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Estilo para el main en esta sección */
+main {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos dorados y negros específicos para la sección de Ronaldo y Messi */
+.header-container-especial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-con-marco-especial {
+    background-image: url('../imagenes/goats.jpg');
+    color: transparent;
+    border: 3px solid #FFD700;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #000000;
+}
+
+/* Estilos para los bloques de jugadores */
+.golden-black .player,
+.golden-black .player-stats {
+    background-color: #000;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+}
+
+.golden-black .player:hover {
+    background-color: rgba(255, 215, 0, 0.3);
+}
+
+/* Efectos hover para jugadores */
+.golden-black .player:hover,
+.golden-black .player h2,
+.golden-black .player p {
+    color: #FFD700;
+}
+
+/* Estilo del contenedor de estadísticas de jugadores */
+.estadisticas-jugador {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.player {
+    background-color: rgba(155, 190, 0, 0.733);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.player img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.player h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.player p {
+    font-size: 18px;
+}
+
+.player:hover {
+    background-color: rgba(255, 215, 0, 0.2);
+    border: 2px solid #FFD700;
+}
+
+/* Estilo del Simulador de Partidos */
+#simulador-partido {
+    border: 1px solid #000000;
+    padding: 2rem 10rem;
+    max-width: 10rem;
+    margin: 5rem auto;
+    background-color: #2f4cf2d9;
+    text-align: center;
+}
+
+#simulador-partido h2 {
+    margin-bottom: 0rem;
+}
+
+#simulador-partido label {
+    display: block;
+    margin-top: 2rem;
+}
+
+#resultado-partido {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Botones generales */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* --- Responsive para header y el login (celular) --- */
+@media (max-width: 786px) {
+    .rectangulo-transparente{
+        height: 110px;
+    }
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .logo-titulo-container {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px; /* Espacio entre los campos */
+        padding: 20px;
+    }
+
+    .login-container input,
+    .login-container button,
+    .login-container a {
+        width: 80%; /* Asegura que todos los elementos tengan el mismo ancho */
+        padding: 10px;
+        font-size: 0.5rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .login-container input {
+        border: 1px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #333;
+    }
+
+    .login-container button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .login-container button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Centrar y asegurar que el enlace 'Registrarse' esté alineado */
+    .login-container a {
+        display: flex;
+        width: 40%; /* El mismo ancho que los inputs */
+        margin: 0 auto; /* Centra el enlace en el contenedor */
+        padding: 5px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.7rem;
+        border-radius: 5px;
+        background-color: transparent; /* Fondo transparente para alinearse visualmente */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+
+    .login-container a:hover {
+        text-decoration: underline;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    nav p {
+        font-size: 0.8rem;
+    }
+}
+
+/* --- Responsive para el simulador de partidos (celular) --- */
+@media (max-width: 786px) {
+    #simulador-partido {
+        width: 100%;
+        padding: 40px;
+        margin: 10px auto;
+    }
+
+    #simulador-partido input,
+    #simulador-partido button {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+/* --- Responsive para las tablas (celular) --- */
+@media (max-width: 786px) {
+    main {
+        font-size: 0.8rem;
+        margin: auto;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 0.8rem;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* --- Responsive para el Foro (celular) --- */
+@media (max-width: 786px) {
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    .recent-topics {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .recent-topics ul {
+        list-style: none;
+        width: 90%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding-inline-start: 0px;
+    }
+
+    .recent-topics li {
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 10px auto;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 71, 238, 0.467);
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    .recent-topics img.icono {
+        margin-right: 20px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* --- Responsive para las estadísticas de los jugadores en celulares --- */
+@media (max-width: 786px) {
+    .estadisticas-jugador {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .player {
+        width: 80%;
+        margin-bottom: 20px;
+        padding: 20px;
+        text-align: center;
+        background-color: #00247d;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .player img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .player h2 {
+        font-size: 0.9rem;
+        color: #FFD700;
+        margin: 0;
+    }
+
+    .player p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    #resultado-partido {
+        font-size: 1rem;
+    }
+}
+
